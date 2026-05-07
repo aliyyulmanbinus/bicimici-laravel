@@ -1,6 +1,7 @@
 *.log
 .DS_Store
 .env
+.claude/skills/laravel-best-practices/
 .env.backup
 .env.production
 .phpactor.json
