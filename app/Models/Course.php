@@ -50,7 +50,7 @@ class Course extends Model
 
     public function category(): BelongsTo
     {
-        return $this->belongTo(Category::class, 'category_id');
+        return $this->belongsTo(Category::class, 'category_id');
     }
 
     // Menghitung total konten dalam sebuah course
