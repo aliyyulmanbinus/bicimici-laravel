@@ -5,12 +5,17 @@ namespace App\Filament\Resources\Transactions\Tables;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Actions\ViewAction;
+use Filament\Actions\Action;
 use Filament\Actions\ForceDeleteBulkAction;
 use Filament\Actions\RestoreBulkAction;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
+use App\Models\Transaction;
+use Illuminate\Support\Facades\Notification;
 
 class TransactionsTable
 {
@@ -18,53 +23,53 @@ class TransactionsTable
     {
         return $table
             ->columns([
+                //
+                ImageColumn::make('student.photo')
+                ->circular()
+                ,
+
+                TextColumn::make('student.name')
+                    ->searchable(),
+
                 TextColumn::make('booking_trx_id')
-                    ->searchable(),
-                TextColumn::make('user_id')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('pricing_id')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('sub_total_amount')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('grand_total_amount')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('total_tax_amount')
-                    ->numeric()
-                    ->sortable(),
+                ->searchable(),
+
+                TextColumn::make('pricing.name'),
+
                 IconColumn::make('is_paid')
-                    ->boolean(),
-                TextColumn::make('payment_type')
-                    ->searchable(),
-                TextColumn::make('proof')
-                    ->searchable(),
-                TextColumn::make('started_at')
-                    ->date()
-                    ->sortable(),
-                TextColumn::make('ended_at')
-                    ->date()
-                    ->sortable(),
-                TextColumn::make('deleted_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->boolean()
+                    ->trueColor('success')
+                    ->falseColor('danger')
+                    ->trueIcon('heroicon-o-check-circle')
+                    ->falseIcon('heroicon-o-x-circle')
+                    ->label('Terverifikasi'),
             ])
             ->filters([
                 TrashedFilter::make(),
             ])
             ->recordActions([
                 EditAction::make(),
+                ViewAction::make(),
+
+                Action::make('approve')
+                    ->label('Approve')
+                    ->action(function (Transaction $record) {
+                        $record->is_paid = true;
+                        $record->save();
+
+                        // Trigger the custom notification
+                        Notification::make()
+                            ->title('Order Approved')
+                            ->success()
+                            ->body('The Order has been successfully approved.')
+                            ->send();
+
+                        // kirim email, kirim sms
+
+                    })
+                    ->color('success')
+                    ->requiresConfirmation()
+                    ->visible(fn (Transaction $record) => !$record->is_paid),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([

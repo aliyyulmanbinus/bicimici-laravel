@@ -8,6 +8,7 @@ use Filament\Actions\EditAction;
 use Filament\Actions\ForceDeleteBulkAction;
 use Filament\Actions\RestoreBulkAction;
 use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
@@ -18,25 +19,35 @@ class CourseMentorsTable
     {
         return $table
             ->columns([
-                IconColumn::make('is_active')
-                    ->boolean(),
-                TextColumn::make('user_id')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('course.name')
+                ImageColumn::make('mentor.photo'),
+
+                TextColumn::make('mentor.name')
+                    ->sortable()
                     ->searchable(),
-                TextColumn::make('deleted_at')
-                    ->dateTime()
+                ImageColumn::make('course.thumbnail'),
+
+                TextColumn::make('course.name')
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->searchable(),
+                // IconColumn::make('is_active')
+                //     ->boolean(),
+                // TextColumn::make('user_id')
+                //     ->numeric()
+                //     ->sortable(),
+                // TextColumn::make('course.name')
+                //     ->searchable(),
+                // TextColumn::make('deleted_at')
+                //     ->dateTime()
+                //     ->sortable()
+                //     ->toggleable(isToggledHiddenByDefault: true),
+                // TextColumn::make('created_at')
+                //     ->dateTime()
+                //     ->sortable()
+                //     ->toggleable(isToggledHiddenByDefault: true),
+                // TextColumn::make('updated_at')
+                //     ->dateTime()
+                //     ->sortable()
+                //     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 TrashedFilter::make(),

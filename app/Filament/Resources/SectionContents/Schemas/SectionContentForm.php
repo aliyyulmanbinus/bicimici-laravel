@@ -5,6 +5,7 @@ namespace App\Filament\Resources\SectionContents\Schemas;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\RichEditor;
 use Filament\Schemas\Schema;
 
 class SectionContentForm
@@ -13,14 +14,30 @@ class SectionContentForm
     {
         return $schema
             ->components([
-                TextInput::make('name')
+                Select::make('course_section_id')
+                    ->label('CourseSection')
+                    ->options(function () {
+                        return \App\Models\CourseSection::with('course')
+                        ->get()
+                        ->mapWithKeys(function ($section) {
+                            return [
+                                $section->id => $section->course
+                                    ? "{$section->course->name} - {$section->name}"
+                                    : $section->name, //fallback if course is null
+                                ];
+                        })
+                        ->toArray(); //convert the collection to an array
+                    })
+                    ->searchable()
                     ->required(),
-                Textarea::make('content')
+
+                TextInput::make('name')
+                    ->required()
+                    ->maxLength(255),
+
+                RichEditor::make('content')
                     ->required()
                     ->columnSpanFull(),
-                Select::make('course_section_id')
-                    ->relationship('courseSection', 'name')
-                    ->required(),
             ]);
     }
 }
