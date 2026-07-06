@@ -50,6 +50,7 @@ class Course extends Model
 
     public function category(): BelongsTo
     {
+        // BELONGS TO = "dimiliki oleh" (many to one)
         return $this->belongsTo(Category::class, 'category_id');
     }
 

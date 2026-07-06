@@ -46,7 +46,7 @@
             class="flex items-center w-full max-w-[1000px] rounded-[20px] border border-bicimici-grey p-5 gap-[30px] bg-white mx-auto">
             <div id="thumbnail-container"
                 class="flex relative w-[500px] h-[350px] shrink-0 rounded-[14px] overflow-hidden bg-bicimici-grey">
-                <img src="{{ Storage::url($course->thumbnail) }}"" class="w-full h-full object-cover" alt="thumbnail">
+                <img src="{{ Storage::disk('public')->url($course->thumbnail) }}"" class="w-full h-full object-cover" alt="thumbnail">
                 <p
                     class="absolute bottom-[10px] left-[10px] z-10 w-fit h-fit flex flex-col items-center rounded-[14px] py-[6px] px-[10px] bg-white gap-0.5 z-10">
                     <img src="{{ asset('assets/images/icons/like.svg') }}"" class="w-5 h-5" alt="icon">
@@ -173,7 +173,7 @@
                                     <div class="flex items-center justify-between">
                                         <div class="flex items-center gap-3">
                                             <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                                <img src="{{ Storage::url($mentor->mentor->photo) }}""
+                                                <img src="{{ Storage::disk('public')->url($mentor->mentor->photo) }}""
                                                     class="w-full h-full object-cover" alt="photo">
                                             </div>
                                             <div>
@@ -256,7 +256,7 @@
                                         alt="photo">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -278,7 +278,7 @@
                                         alt="photo">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -296,11 +296,11 @@
                                 saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                    <img src="{{ asset('assets/images/photos/ALIYYULphoto.png') }}"" class="w-full h-full object-cover"
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}"" class="w-full h-full object-cover"
                                         alt="photo">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -322,7 +322,7 @@
                                         alt="photo">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -344,7 +344,7 @@
                                         alt="photo">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -362,11 +362,11 @@
                                 saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                    <img src="{{ asset('assets/images/photos/ALIYYULphoto.png') }}"" class="w-full h-full object-cover"
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}"" class="w-full h-full object-cover"
                                         alt="photo">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -384,11 +384,11 @@
                                 saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                    <img src="{{ asset('assets/images/photos/3rdPerson.png') }}"" class="w-full h-full object-cover"
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}"" class="w-full h-full object-cover"
                                         alt="photo">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>

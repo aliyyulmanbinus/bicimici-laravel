@@ -10,13 +10,13 @@
         <meta name="description" content="Bicimici is an innovative online learning platform that empowers students and professionals with high-quality, accessible courses.">
 
         <!-- Favicon -->
-        <link rel="icon" type="image/svg" sizes="32x32" href="assets/images/logos/') }}">
-        <link rel="apple-touch-icon" href="assets/images/logos/') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/logo_test_32.png') }}">
+        <link rel="apple-touch-icon" href="assets/images/logos/logo_test_32.png') }}">
 
         <!-- Open Graph Meta Tags -->
         <meta property="og:title" content="Bicimici Online Learning Platform - Learn Anytime, Anywhere">
         <meta property="og:description" content="Bicimici is an innovative online learning platform that empowers students and professionals with high-quality, accessible courses.">
-        <meta property="og:image" content="assets/images/logos/') }}">
+        <meta property="og:image" content="assets/images/logos/logo_test_32.png') }}">
         <meta property="og:url" content="https://bicimici.netlify.app">
         <meta property="og:type" content="website">
     </head>

@@ -45,7 +45,8 @@ class UserForm
 
                 FileUpload::make('photo')
                 ->required()
-                ->image(),
+                ->image()
+                ->disk('public'),
                 
             ]);
     }

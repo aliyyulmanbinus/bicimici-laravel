@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-[14px]">
-                        <img src="{{ asset('assets//images/photos/group.png') }}" class="flex shrink-0 h-[50px]" alt="group photo">
+                        {{-- <img src="{{ asset('assets//images/photos/group.png') }}" class="flex shrink-0 h-[50px]" alt="group photo"> --}}
                         <div>
                             {{-- <div class="flex gap-1 items-center">
                                 <div class="flex">

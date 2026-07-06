@@ -16,7 +16,7 @@
             </ul>
             <header class="flex flex-col gap-[12px]">
                 <div class="flex justify-center items-center overflow-hidden w-full h-[100px] rounded-[14px]">
-                    <img src="{{ Storage::url($course->thumbnail) }}" alt="image" class="w-full h-full object-cover" />
+                    <img src="{{ Storage::disk('public')->url($course->thumbnail) }}" alt="image" class="w-full h-full object-cover" />
                 </div>
                 <h1 class="font-bold">{{ $course->name }}</h1>
             </header>

@@ -14,6 +14,12 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'bssn-purple': '#3A0CA3',
+                'bssn-purple-dark': '#2A0878',
+                'bssn-pink': '#F0427D',
+                'bssn-dark': '#0E0B1F',
+            },
         },
     },
 

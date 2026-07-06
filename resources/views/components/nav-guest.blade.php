@@ -2,7 +2,7 @@
             <div class="flex w-[1280px] px-[75px] py-5 items-center justify-between mx-auto">
                 <div class="flex items-center gap-[50px]">
                     <a href="{{ route('front.index') }}" class="flex shrink-0">
-                        <img src="{{ asset('assets/images/logos/.svg') }}" class="flex shrink-0" alt="logo">
+                        <img src="{{ asset('assets/images/logos/logo_test_32.png') }}" class="flex shrink-0" alt="logo">
                     </a>
                     <ul class="flex items-center gap-10">
                         <li class="{{ request()->routeIs('front.index') ? 'font-semibold' : '' }} hover:font-semibold transition-all duration-300 ">

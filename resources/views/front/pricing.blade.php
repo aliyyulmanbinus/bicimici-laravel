@@ -120,10 +120,10 @@
                             <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-bicimici-grey">
-                                    <img src="{{ asset('assets/images/photos/ALIYYULphoto.png') }}" class="w-full h-full object-cover" alt="photo profile">
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
                                     <img src="{{ asset('assets/images/photos/sami.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -158,10 +158,10 @@
                             <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-bicimici-grey">
-                                    <img src="{{ asset('assets/images/photos/3rdPerson.png') }}" class="w-full h-full object-cover" alt="photo profile">
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -177,10 +177,10 @@
                             <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-bicimici-grey">
-                                    <img src="{{ asset('assets/images/photos/ALIYYULphoto.png') }}" class="w-full h-full object-cover" alt="photo profile">
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -199,7 +199,7 @@
                                     <img src="{{ asset('assets/images/photos/sami.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -215,10 +215,10 @@
                             <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-bicimici-grey">
-                                    <img src="{{ asset('assets/images/photos/3rdPerson.png') }}" class="w-full h-full object-cover" alt="photo profile">
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -236,10 +236,10 @@
                             <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-bicimici-grey">
-                                    <img src="{{ asset('assets/images/photos/ALIYYULphoto.png') }}" class="w-full h-full object-cover" alt="photo profile">
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -258,7 +258,7 @@
                                     <img src="{{ asset('assets/images/photos/sami.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -274,10 +274,10 @@
                             <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-bicimici-grey">
-                                    <img src="{{ asset('assets/images/photos/3rdPerson.png') }}" class="w-full h-full object-cover" alt="photo profile">
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -293,10 +293,10 @@
                             <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-bicimici-grey">
-                                    <img src="{{ asset('assets/images/photos/ALIYYULphoto.png') }}" class="w-full h-full object-cover" alt="photo profile">
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -315,7 +315,7 @@
                                     <img src="{{ asset('assets/images/photos/sami.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>
@@ -331,10 +331,10 @@
                             <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
                             <div class="flex items-center gap-3">
                                 <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-bicimici-grey">
-                                    <img src="{{ asset('assets/images/photos/3rdPerson.png') }}" class="w-full h-full object-cover" alt="photo profile">
+                                    <img src="{{ asset('assets/images/photos/bussiness-man.png') }}" class="w-full h-full object-cover" alt="photo profile">
                                 </div>
                                 <div>
-                                    <p class="font-semibold">ALIYYUL Risky</p>
+                                    <p class="font-semibold">Aliyyulman Jihan</p>
                                     <p class="text-sm text-bicimici-text-secondary">Full Stack Developer</p>
                                 </div>
                             </div>

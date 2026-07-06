@@ -25,7 +25,8 @@ class CourseForm
                         ->maxLength(255),
                     FileUpload::make('thumbnail')
                         ->required()
-                        ->image(),
+                        ->image()
+                        ->disk('public'),
                 ]),
 
                 Fieldset::make('Additional')

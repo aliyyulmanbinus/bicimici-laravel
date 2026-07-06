@@ -13,7 +13,7 @@
         </div>
         <div id="card" class="flex items-center pt-[10px] pb-[10px] pl-[10px] pr-4 border border-bicimici-grey rounded-[20px] gap-4">
             <div class="flex justify-center items-center overflow-hidden shrink-0 w-[180px] h-[130px] rounded-[14px]">
-                <img src="{{ Storage::url($course->thumbnail) }}" alt="image" class="w-full h-full object-cover" />
+                <img src="{{ Storage::disk('public')->url($course->thumbnail) }}" alt="image" class="w-full h-full object-cover" />
             </div>
             <div class="flex flex-col gap-[10px]">
                 <h2 class="font-bold">{{ $course->name }}</h2>

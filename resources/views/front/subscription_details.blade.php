@@ -94,7 +94,7 @@
                     <h2 class="font-semibold">Access Given to</h2>
                     <div class="profile flex items-center gap-[14px] rounded-[20px] border border-bicimici-grey p-[14px]">
                         <div class="flex justify-center items-center overflow-hidden size-[50px] rounded-full">
-                            <img src="{{ Storage::url($transaction->student->photo) }}" alt="image" class="size-full object-cover" />
+                            <img src="{{ Storage::disk('public')->url($transaction->student->photo) }}" alt="image" class="size-full object-cover" />
                         </div>
                         <div class="desc flex flex-col gap-[3px]">
                             <h3 class="font-semibold">{{ $transaction->student->name }}</h3>

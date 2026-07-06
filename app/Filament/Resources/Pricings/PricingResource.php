@@ -21,7 +21,7 @@ class PricingResource extends Resource
 {
     protected static ?string $model = Pricing::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedCurrencyDollar;
 
     protected static string|UnitEnum|null $navigationGroup = 'Managements';
 

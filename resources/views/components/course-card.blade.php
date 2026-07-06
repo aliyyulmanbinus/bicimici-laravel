@@ -2,7 +2,7 @@
                             <div class="course-card flex flex-col rounded-[20px] border border-bicimici-grey hover:border-bicimici-green transition-all duration-300 bg-white overflow-hidden">
                                 <div class="thumbnail-container p-[10px]">
                                     <div class="relative w-full h-[150px] rounded-[14px] overflow-hidden bg-bicimici-grey">
-                                        <img src="{{ Storage::url($course->thumbnail) }}" class="w-full h-full object-cover" alt="thumbnail">
+                                        <img src="{{ Storage::disk('public')->url($course->thumbnail) }}" class="w-full h-full object-cover" alt="thumbnail">
                                         <p class="absolute top-[10px] right-[10px] z-10 w-fit h-fit flex flex-col items-center rounded-[14px] py-[6px] px-[10px] bg-white gap-0.5">
                                             <img src="{{ asset ('assets/images/icons/like.svg') }}" class="w-5 h-5" alt="icon">
                                             <span class="font-semibold text-xs">4.8</span>
